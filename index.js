@@ -29,6 +29,6 @@ app.use(cors({
 }));
 app.use("/api/user/", UserRoutes);
 app.use("/api/jobpost/", JobPostRouter);
-// app.use("/", (req, res) =>{
-//     res.send("Server Running Successfully");
-// });
+app.use("/", (req, res) =>{
+    res.send("Server Running Successfully");
+});
